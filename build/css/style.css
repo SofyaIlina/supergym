@@ -436,7 +436,6 @@ html {
   font-size: 16px;
   line-height: 24px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  letter-spacing: 0.03em;
   color: #102654;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
@@ -1370,7 +1369,6 @@ button,
 
 .promo__title {
   font-family: "Alumni Sans", "Arial", sans-serif;
-  text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1393,6 +1391,7 @@ button,
   line-height: 111px;
   letter-spacing: 0.056em;
   -webkit-text-stroke: 4px;
+  text-transform: uppercase;
 }
 
 .promo__title h3 {
@@ -1401,11 +1400,11 @@ button,
   -webkit-box-ordinal-group: 0;
   -ms-flex-order: -1;
   order: -1;
-  font-size: 40px;
+  font-size: 48px;
   font-weight: 600;
   line-height: 58px;
   margin-right: 52px;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.03em;
 }
 
 .promo__description {
@@ -1464,6 +1463,91 @@ button,
 
 .promo a.focus-visible:focus {
   background-color: #102654;
+}
+
+.about__container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 85px;
+  -moz-column-gap: 85px;
+  column-gap: 85px;
+  -ms-grid-columns: 415px auto;
+  grid-template-columns: 415px auto;
+}
+
+.about__text {
+  margin-left: 60px;
+}
+
+.about__text h2 {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 57px;
+  letter-spacing: 0.03em;
+  margin: 39px 0 8px;
+}
+
+.about__text h3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.about__text p {
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 9px;
+}
+
+.about picture {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.about picture img {
+  width: 100%;
+}
+
+.about__video {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  margin-left: -63px;
+  margin-right: auto;
+  margin-top: -113px;
+  position: relative;
+}
+
+.video__preview {
+  position: relative;
+  width: 364px;
+  height: 228px;
+}
+
+.video__button {
+  width: 100px;
+  height: 100px;
+  background: url("../img/sprite/play.svg");
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.footer {
+  background-color: rgb(127, 202, 202);
 }
 
 .footer__container {
@@ -1558,7 +1642,7 @@ button,
   }
 */
 
-@media (max-width: 1023px) {
+@media (max-width: 1199px) {
   .container {
     padding-left: 45px;
     padding-right: 45px;
@@ -1576,6 +1660,7 @@ button,
   .header a {
     font-size: 24px;
     line-height: 17px;
+    letter-spacing: 0.02em;
   }
 
   .promo__container {
@@ -1584,24 +1669,91 @@ button,
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
+    -ms-grid-columns: 83px 211px auto;
+    grid-template-columns: 83px 211px auto;
+    -ms-grid-rows: auto 84px;
+    grid-template-rows: auto 84px;
   }
 
   .promo__title {
-    padding-top: 57px;
+    padding-top: 51px;
   }
 
   .promo__title h2 {
-    font-size: 72px;
+    font-size: 70px;
     line-height: 86px;
+    letter-spacing: 0.062em;
+    text-transform: none;
   }
 
   .promo__title h3 {
     font-size: 34px;
     line-height: 41px;
+    margin-right: 4px;
+    margin-bottom: 5px;
   }
 
   .promo__description {
-    padding-top: 192px;
+    padding-top: 186px;
+    margin-right: -30px;
+  }
+
+  .promo a {
+    margin-left: 26px;
+    margin-right: -2px;
+  }
+
+  .about__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 94px;
+  }
+
+  .about__text {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .about__text h2 {
+    font-size: 42px;
+    line-height: 50px;
+    margin: 0;
+    -webkit-transform: translateX(-9px);
+    -ms-transform: translateX(-9px);
+    transform: translateX(-9px);
+  }
+
+  .about__text h3 {
+    margin-bottom: 34px;
+  }
+
+  .about__text .about__description {
+    margin-bottom: 43px;
+    padding-left: 88px;
+    padding-right: 88px;
+  }
+
+  .about__text p:nth-child(2) {
+    display: none;
+  }
+
+  .about__video {
+    margin: 0;
+    margin-top: -84px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+
+  .about__video iframe {
+    width: 266px;
+    height: 167px;
   }
 
   .footer__container {
@@ -1665,6 +1817,103 @@ button,
 
   .modal--fit-content .modal__content {
     width: 100%;
+  }
+
+  .header__container {
+    padding-top: 15px;
+  }
+
+  .header__logo svg {
+    width: 69px;
+    height: 24px;
+  }
+
+  .header a {
+    font-size: 20px;
+    line-height: 15px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+
+  .promo__container {
+    padding-top: 66px;
+    padding-bottom: 80px;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    column-gap: 0;
+    -ms-grid-columns: 83px auto;
+    grid-template-columns: 83px auto;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  .promo__title {
+    padding-bottom: 23px;
+  }
+
+  .promo__title h3 {
+    font-size: 28px;
+    line-height: 18px;
+    letter-spacing: 0.065em;
+    margin-right: 2px;
+    margin-bottom: 20px;
+  }
+
+  .promo__description {
+    padding-top: 167px;
+    margin-right: -30px;
+  }
+
+  .promo picture {
+    display: none;
+  }
+
+  .promo a {
+    margin: 0 -2px auto;
+    padding-top: 20px;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+
+  .about__container {
+    padding: 63px 0;
+  }
+
+  .about__text {
+    text-align: left;
+    padding: 0 15px;
+  }
+
+  .about__text h2 {
+    font-size: 32px;
+    line-height: 38px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    margin-bottom: 5px;
+  }
+
+  .about__text h3 {
+    margin-bottom: 25px;
+  }
+
+  .about__text .about__description {
+    padding: 0;
+    padding-right: 27px;
+    margin-bottom: 32px;
+  }
+
+  .about__video {
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  .about__video iframe {
+    width: 100vw;
+    height: auto;
+    aspect-ratio: 1.91/1;
   }
 
   .footer__container {

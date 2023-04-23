@@ -1,0 +1,19 @@
+.video__preview {
+  position: relative;
+  width: 364px;
+  height: 228px;
+}
+
+.video__button {
+  width: 100px;
+  height: 100px;
+  background: url("../img/sprite/play.svg");
+  border: none;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
