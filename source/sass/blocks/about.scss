@@ -8,7 +8,7 @@
   @include vp-1199 {
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
+    padding-top: 101px;
     padding-bottom: 94px;
   }
 
@@ -41,6 +41,7 @@
     @include vp-1199 {
       font-size: 42px;
       line-height: 50px;
+      letter-spacing: 0.03em;
       margin: 0;
       transform: translateX(-9px);
     }
@@ -58,10 +59,10 @@
     font-weight: 400;
     line-height: 27px;
     margin: 0;
-    margin-bottom: 38px;
+    margin-bottom: 39px;
 
     @include vp-1199 {
-      margin-bottom: 34px;
+      margin-bottom: 33px;
     }
 
     @include vp-767 {
@@ -86,7 +87,7 @@
   p {
     font-weight: 300;
     margin: 0;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 
     @include vp-1199 {
       &:nth-child(2) {
@@ -112,10 +113,17 @@
   margin-top: -113px;
   position: relative;
 
+  iframe {
+    border: none;
+    display: block;
+  }
+
   @include vp-1199 {
     margin: 0;
     margin-top: -84px;
     align-self: center;
+    width: 266px;
+    height: 167px;
 
     iframe {
       width: 266px;
@@ -126,6 +134,7 @@
   @include vp-767 {
     margin: 0;
     margin-top: 40px;
+    width: 100%;
 
     iframe {
       width: 100vw;

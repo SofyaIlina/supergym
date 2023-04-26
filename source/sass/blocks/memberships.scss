@@ -1,0 +1,19 @@
+.memberships {
+  background-color: $color-ghost-white;
+
+  &__container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  h2 {
+    font-family: $ff-alumni-sans;
+    font-size: 54px;
+    line-height: 65px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    margin: 0;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+}

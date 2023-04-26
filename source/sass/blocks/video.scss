@@ -1,13 +1,11 @@
 .video__preview {
   position: relative;
-  width: 364px;
-  height: 228px;
 }
 
 .video__button {
   width: 100px;
   height: 100px;
-  background: url("../img/sprite/play.svg");
+  background: url("../img/sprite/play.svg") center/contain;
   border: none;
 
   position: absolute;
@@ -16,4 +14,9 @@
   bottom: 0;
   right: 0;
   margin: auto;
+
+  @include vp-1199 {
+    width: 73px;
+    height: 73px;
+  }
 }
