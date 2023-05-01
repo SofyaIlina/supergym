@@ -1,0 +1,191 @@
+.coaches__container {
+  padding-top: 53px;
+  padding-bottom: 140px;
+
+  @include vp-1199 {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  h2 {
+    font-family: $ff-alumni-sans;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.03em;
+    padding: 0 105px;
+    margin: 0 auto 48px;
+    max-width: 1366px;
+
+    @include vp-1199 {
+      font-size: 42px;
+      line-height: 50px;
+      margin-bottom: 31px;
+      text-align: center;
+      transform: translateX(-2px);
+    }
+  }
+
+  .coaches__content {
+    display: flex;
+    align-items: center;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 47px;
+    color: $color-default-white;
+
+    @include vp-1199 {
+      padding: 0 44px;
+    }
+  }
+}
+
+.coaches__btn {
+  position: static;
+  border: none;
+  display: block;
+  background-color: transparent;
+  padding-top: 21px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 23px;
+    border: 1px solid $color-dark-grey;
+    border-top: none;
+    border-right: none;
+    transform: rotate(45deg);
+
+    @include vp-767 {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  &--next {
+    transform: translateX(-5px);
+
+    &::after {
+      transform: rotate(-135deg);
+    }
+  }
+
+  @include hover-focus {
+    outline: none;
+
+    &::after {
+      border-bottom: 1px solid $color-crimson;
+      border-left: 1px solid $color-crimson;
+    }
+  }
+
+  &:active {
+    &::after {
+      border-bottom: 1px solid $color-sapphire;
+      border-left: 1px solid $color-sapphire;
+    }
+  }
+}
+
+.coaches__slider {
+  margin: 0 30px;
+}
+
+.coaches__item {
+  position: relative;
+  width: 100%;
+
+  @media (min-width: 1200px) {
+    &:hover .coaches__image {
+      z-index: -10;
+      box-shadow: $coach-shadow;
+    }
+
+    &:hover h3 {
+      top: 51px;
+    }
+  }
+
+  @include vp-1199 {
+    &:active .coaches__image {
+      z-index: -10;
+      box-shadow: $coach-shadow;
+    }
+
+    &:active h3 {
+      top: 52px;
+      transform: translateX(-4px);
+    }
+  }
+}
+
+.coaches__description-wrapper {
+  padding: 58px 44px 39px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-sapphire-89;
+  
+  @include vp-1199 {
+    padding-top: 59px;
+  }
+
+  @include vp-767 {
+    aspect-ratio: 1/1.2;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    position: absolute;
+    bottom: 22px;
+    margin: 0;
+    z-index: 1;
+    align-self: center;
+
+    @include vp-1199 {
+      transform: translateX(4px);
+    }
+  }
+
+  p {
+    color: $color-spindle;
+    text-align: center;
+    margin-bottom: 33px;
+
+    @include vp-1199 {
+      transform: translateX(-4px);
+    }
+  }
+
+  .coaches__description-list {
+    list-style-type: disc;
+    padding-left: 28px;
+
+    li {
+      font-size: 14px;
+      line-height: 21px;
+      margin-bottom: 12px;
+
+      &::marker {
+        font-size: 1.3em;
+      }
+    }
+  }
+}
+
+.coaches__image {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}

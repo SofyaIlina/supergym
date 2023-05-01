@@ -17,7 +17,10 @@ $color-ghost-white:                 #f8f9fc;
 $color-crimson:                     #d10a42;
 $color-egyptian-blue:               #103aae;
 $color-torch-red:                   #ed0233;
-$color-whisper:                     rgb(232, 232, 232, 0.48);
+$color-dark-grey:                   #afafaf;
+$color-spindle:                     #b6bdcc;
+$color-sapphire-89:                 rgba(16, 38, 84, 0.89);
+$color-whisper:                     rgba(232, 232, 232, 0.48);
 $color-grey:                        rgba(120, 120, 120, 0.2);
 
 // Gradient
@@ -25,7 +28,7 @@ $color-grey:                        rgba(120, 120, 120, 0.2);
 $button-gradient:                   linear-gradient(90deg, $color-torch-red, #003eb7);
 $border-gradient:                   linear-gradient(135deg, $color-crimson, #00359f);
 $bg-promo:                          conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 12.24deg, #b80027 293.31deg, #003d85 372.24deg);
-
+$coach-shadow:                      0 0 35px rgba(42, 59, 99, 0.17);
 // Typography
 // ---------------------------------
 
