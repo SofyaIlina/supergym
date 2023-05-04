@@ -24,13 +24,13 @@ const initSwiper = () => {
   });
 };
 
-const initFeedbackSwiper = () => {
-  const feedbackSlider = new Swiper('.swiper--feedback', { // eslint-disable-line
+const initReviewsSwiper = () => {
+  new Swiper('.swiper--reviews', { // eslint-disable-line
     direction: 'horizontal',
 
     navigation: {
-      nextEl: '.feedback__button--next',
-      prevEl: '.feedback__button--prev',
+      nextEl: '.reviews__btn--next',
+      prevEl: '.reviews__btn--prev',
     },
 
     slidesPerView: 1,
@@ -38,4 +38,4 @@ const initFeedbackSwiper = () => {
 };
 
 initSwiper();
-initFeedbackSwiper();
+initReviewsSwiper();

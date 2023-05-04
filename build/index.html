@@ -413,6 +413,39 @@
             </div>
           </div>
         </section>
+        <section class="reviews">
+          <div class="reviews__container container">
+            <h2>Отзывы</h2>
+            <div class="reviews__content">
+              <button class="reviews__btn reviews__btn--prev swiper-button-prev" type="button">
+                <span class="visually-hidden">Предыдущий слайд.</span>
+              </button>
+              <div class="reviews__slider swiper swiper--reviews">
+                <ul class="reviews__list swiper-wrapper reset-list">
+                  <li class="reviews__item swiper-slide">
+                    <picture>
+                      <source type="image/webp" srcset="img/reviews/anna-orlova.webp 1x, img/reviews/anna-orlova@2x.webp 2x">
+                      <img src="img/reviews/anna-orlova.jpg" srcset="img/reviews/anna-orlova@2x.jpg 2x" width="80" height="80" alt="Аватар посетителя Анны Орловой.">
+                    </picture>
+                    <h3>Анна Орлова</h3>
+                    <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                  </li>
+                  <li class="reviews__item swiper-slide">
+                    <picture>
+                      <source type="image/webp" srcset="img/reviews/evgeni-chub.webp 1x, img/reviews/evgeni-chub@2x.webp 2x">
+                      <img src="img/reviews/evgeni-chub.jpg" srcset="img/reviews/evgeni-chub@2x.jpg 2x" width="80" height="80" alt="Аватар посетителя Евгения Чуб.">
+                    </picture>
+                    <h3>Евгений Чуб</h3>
+                    <p>&laquo;Один из&nbsp;любимых фитнесс клубов в&nbsp;городе. Очень чистое помещение. В&nbsp;залах всегда чисто, свежо, тренажёры новые. Инструктора вежливые, профессиональные&raquo;</p>
+                  </li>
+                </ul>
+              </div>
+              <button class="reviews__btn reviews__btn--next swiper-button-next" type="button">
+                <span class="visually-hidden">Следующий слайд.</span>
+              </button>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="footer__container container">
@@ -461,38 +494,7 @@
         </div>
       </footer>
     </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
-
   </body>
 </html>
