@@ -118,7 +118,8 @@
   padding: 56px 99px 65px 120px;
 
   @include vp-1199 {
-      padding: 59px 103px 62px 133px;
+    border: none;
+    padding: 59px 103px 62px 133px;
   }
 
   @include vp-767 {
