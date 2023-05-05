@@ -26,7 +26,7 @@
         }
       }
     }
-    
+
     @include vp-1199 {
       width: 349px;
       height: 443px;
@@ -53,11 +53,11 @@
 
   &__container {
     padding-top: 120px;
-    padding-bottom: 121px;
-    
+    padding-bottom: 120px;
+
     @include vp-1199 {
       padding-top: 106px;
-      padding-bottom: 100px;
+      padding-bottom: 97px;
     }
 
     @include vp-767 {
