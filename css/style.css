@@ -2215,7 +2215,11 @@ button,
   flex-shrink: 1;
 }
 
-.header a {
+.header__logo.focus-visible:focus {
+  color: #102654;
+}
+
+.header__list a {
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 26px;
   font-weight: 600;
@@ -2226,7 +2230,7 @@ button,
   transition: 0.3s ease;
 }
 
-.header a.focus-visible:focus {
+.header__list a.focus-visible:focus {
   color: #102654;
 }
 
@@ -2431,7 +2435,7 @@ button,
 
 .memberships__container {
   padding-top: 120px;
-  padding-bottom: 121px;
+  padding-bottom: 120px;
 }
 
 .memberships h2 {
@@ -2598,7 +2602,7 @@ button,
 }
 
 .tabs__element li b::before {
-  content: attr(value);
+  content: attr(data-value);
   position: absolute;
   width: 280px;
   height: 69px;
@@ -2925,6 +2929,7 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   background-color: rgba(16, 38, 84, 0.89);
+  aspect-ratio: 1/1.1;
 }
 
 .coaches__description-wrapper h3 {
@@ -3026,6 +3031,7 @@ button,
   column-gap: 30px;
   -ms-grid-row-align: start;
   align-self: start;
+  padding-right: 8px;
 }
 
 .features__item b {
@@ -3044,9 +3050,6 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/3;
@@ -3059,6 +3062,7 @@ button,
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+  margin-top: 2px;
 }
 
 .features__item h3 {
@@ -3066,7 +3070,7 @@ button,
   font-weight: 700;
   line-height: 18px;
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
 }
 
 .features__item p {
@@ -3707,6 +3711,7 @@ button,
     -ms-flex-item-align: end;
     -ms-grid-row-align: end;
     align-self: end;
+    padding: 0;
     margin-bottom: -7px;
   }
 }
@@ -3767,7 +3772,7 @@ button,
     height: 17px;
   }
 
-  .header a {
+  .header__list a {
     font-size: 24px;
     line-height: 17px;
     letter-spacing: 0.02em;
@@ -3884,7 +3889,7 @@ button,
 
   .memberships__container {
     padding-top: 106px;
-    padding-bottom: 100px;
+    padding-bottom: 97px;
   }
 
   .memberships h2 {
@@ -4036,8 +4041,8 @@ button,
   .features__container {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding-top: 93px;
-    padding-bottom: 100px;
+    padding-top: 91px;
+    padding-bottom: 91px;
     max-width: none;
   }
 
@@ -4054,23 +4059,30 @@ button,
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     margin: 0;
-    gap: 31px;
+    gap: 35px 31px;
   }
 
   .features__item {
     -webkit-column-gap: 29px;
     -moz-column-gap: 29px;
     column-gap: 29px;
+    padding-right: 0;
   }
 
   .features__item b {
     font-size: 58px;
     line-height: 54px;
+    margin-bottom: 10px;
+  }
+
+  .features__item span {
+    margin: 0;
   }
 
   .features__item h3 {
     font-size: 20px;
     line-height: 14px;
+    margin-bottom: 5px;
   }
 
   .features__item-main {
@@ -4083,8 +4095,7 @@ button,
     padding: 30px 135px 38px;
     -ms-grid-column-align: center;
     justify-self: center;
-    margin-top: 13px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .features__item-main::after,
@@ -4185,6 +4196,10 @@ button,
     gap: 60px;
   }
 
+  .contacts__input-wrapper input {
+    padding-bottom: 4px;
+  }
+
   .contacts__content {
     border: none;
     padding: 59px 103px 62px 133px;
@@ -4272,9 +4287,9 @@ button,
     height: 24px;
   }
 
-  .header a {
+  .header__list a {
     font-size: 20px;
-    line-height: 15px;
+    line-height: 26px;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
@@ -4393,7 +4408,7 @@ button,
 
   .tabs__element ul {
     padding: 0;
-    gap: 35px;
+    gap: 32px;
   }
 
   .tabs__element li {
@@ -4527,7 +4542,6 @@ button,
   }
 
   .features__item {
-    padding: 0 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4547,7 +4561,12 @@ button,
   }
 
   .features__item span {
-    margin-bottom: 14px;
+    margin-top: 2px;
+    margin-bottom: 3px;
+  }
+
+  .features__item h3 {
+    margin-bottom: 13px;
   }
 
   .features__item-main {
@@ -4668,20 +4687,24 @@ button,
   }
 
   .contacts__form-wrapper {
-    padding: 70px 15px;
+    padding: 70px 15px 68px;
   }
 
   .contacts__form h3 {
     font-size: 32px;
     line-height: 24px;
     font-weight: 600;
-    margin-bottom: 41px;
+    margin-bottom: 42px;
   }
 
   .contacts__input-wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 32px;
+  }
+
+  .contacts__input-wrapper input {
+    padding-bottom: 6px;
   }
 
   .contacts__btn {
@@ -4835,7 +4858,11 @@ button,
     background-color: rgba(0, 0, 0, 0.4);
   }
 
-  .header a:hover:not(.focus-visible) {
+  .header__logo:hover:not(.focus-visible) {
+    color: #102654;
+  }
+
+  .header__list a:hover:not(.focus-visible) {
     color: #102654;
   }
 

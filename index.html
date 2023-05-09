@@ -23,7 +23,11 @@
               <use href="img/sprite.svg#logo"></use>
             </svg>
           </a>
-          <a href="tel:88005555555">8-800-555-55-55</a>
+          <ul class="header__list reset-list">
+            <li>
+              <a href="tel:88005555555">8-800-555-55-55</a>
+            </li>
+          </ul>
         </div>
       </header>
       <main>
@@ -64,7 +68,7 @@
               <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x">
               <source media="(max-width: 1199px)" srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x">
               <source type="image/webp" srcset="img/gym.webp 1x, img/gym@2x.webp 2x">
-              <img src="img/gym.jpg" srcset="img/gym@2x.jpg 2x" width="660" height="401" alt="Тренажерный зал с современным оборудованием.">
+              <img src="img/gym.jpg" srcset="img/gym@2x.jpg 2x" width="660" height="401" alt="Тренажерный зал с современным оборудованием." loading=lazy>
             </picture>
             <div class="about__video video">
               <div class="video__preview">
@@ -94,19 +98,19 @@
                   <li>
                     <h3>С тренером</h3>
                     <p>12 занятий</p>
-                    <b value="5000">5000</b>
+                    <b data-value="5000">5000</b>
                     <a href="#">купить абонемент</a>
                   </li>
                   <li>
                     <h3>Дневной</h3>
                     <p>с 8:00 до 17:00</p>
-                    <b value="1700">1700</b>
+                    <b data-value="1700">1700</b>
                     <a href="#">купить абонемент</a>
                   </li>
                   <li>
                     <h3>Полный день</h3>
                     <p>с 8:00 до 22:00</p>
-                    <b value="2700">2700</b>
+                    <b data-value="2700">2700</b>
                     <a href="#">купить абонемент</a>
                   </li>
                 </ul>
@@ -116,19 +120,19 @@
                   <li>
                     <h3>С тренером</h3>
                     <p>12 занятий</p>
-                    <b value="25000">25000</b>
+                    <b data-value="25000">25000</b>
                     <a href="#">купить абонемент</a>
                   </li>
                   <li>
                     <h3>Дневной</h3>
                     <p>с 8:00 до 17:00</p>
-                    <b value="5700">5700</b>
+                    <b data-value="5700">5700</b>
                     <a href="#">купить абонемент</a>
                   </li>
                   <li>
                     <h3>Полный день</h3>
                     <p>с 8:00 до 22:00</p>
-                    <b value="10700">10700</b>
+                    <b data-value="10700">10700</b>
                     <a href="#">купить абонемент</a>
                   </li>
                 </ul>
@@ -138,19 +142,19 @@
                   <li>
                     <h3>С тренером</h3>
                     <p>12 занятий</p>
-                    <b value="45000">45000</b>
+                    <b data-value="45000">45000</b>
                     <a href="#">купить абонемент</a>
                   </li>
                   <li>
                     <h3>Дневной</h3>
                     <p>с 8:00 до 17:00</p>
-                    <b value="10700">10700</b>
+                    <b data-value="10700">10700</b>
                     <a href="#">купить абонемент</a>
                   </li>
                   <li>
                     <h3>Полный день</h3>
                     <p>с 8:00 до 22:00</p>
-                    <b value="20700">20700</b>
+                    <b data-value="20700">20700</b>
                     <a href="#">купить абонемент</a>
                   </li>
                 </ul>
@@ -170,7 +174,7 @@
                 <dt>Время</dt>
                 <dd>12:00</dd>
               </dl>
-              <a>заполнить заявку</a>
+              <a href="#">заполнить заявку</a>
             </div>
             <picture>
               <source type="image/webp" media="(max-width: 767px)" srcset="img/super-games-mobile.webp 1x, img/super-games-mobile@2x.webp 2x">
@@ -280,7 +284,7 @@
                     <div class="coaches__image">
                       <picture>
                         <source type="image/webp" srcset="img/coaches/ivan-nezlobin.webp 1x, img/coaches/ivan-nezlobin@2x.webp 2x">
-                        <img src="img/coaches/ivan-nezlobin.jpg" srcset="img/coaches/ivan-nezlobin@2x.jpg 2x" width="260" height="294" alt="Портрет тренера Ивана Незлобина.">
+                        <img src="img/coaches/ivan-nezlobin.jpg" srcset="img/coaches/ivan-nezlobin@2x.jpg 2x" width="260" height="294" alt="Портрет тренера Ивана Незлобина." loading=lazy>
                       </picture>
                     </div>
                   </li>
@@ -299,7 +303,7 @@
                     <div class="coaches__image">
                       <picture>
                         <source type="image/webp" srcset="img/coaches/mila-delay.webp 1x, img/coaches/mila-delay@2x.webp 2x">
-                        <img src="img/coaches/mila-delay.jpg" srcset="img/coaches/mila-delay@2x.jpg 2x" width="260" height="294" alt="Портрет тренера Милы Делэй.">
+                        <img src="img/coaches/mila-delay.jpg" srcset="img/coaches/mila-delay@2x.jpg 2x" width="260" height="294" alt="Портрет тренера Милы Делэй." loading=lazy>
                       </picture>
                     </div>
                   </li>
@@ -318,7 +322,7 @@
                     <div class="coaches__image">
                       <picture>
                         <source type="image/webp" srcset="img/coaches/prohor-shalyapin.webp 1x, img/coaches/prohor-shalyapin@2x.webp 2x">
-                        <img src="img/coaches/prohor-shalyapin.jpg" srcset="img/coaches/prohor-shalyapin@2x.jpg 2x" width="260" height="294" alt="Портрет тренера Прохора Шаляпина.">
+                        <img src="img/coaches/prohor-shalyapin.jpg" srcset="img/coaches/prohor-shalyapin@2x.jpg 2x" width="260" height="294" alt="Портрет тренера Прохора Шаляпина." loading=lazy>
                       </picture>
                     </div>
                   </li>
@@ -337,7 +341,7 @@
                     <div class="coaches__image">
                       <picture>
                         <source type="image/webp" srcset="img/coaches/nina-gromova.webp 1x, img/coaches/nina-gromova@2x.webp 2x">
-                        <img src="img/coaches/nina-gromova.jpg" srcset="img/coaches/nina-gromova@2x.jpg 2x" width="260" height="294" alt="Портрет тренера Нины Громовой.">
+                        <img src="img/coaches/nina-gromova.jpg" srcset="img/coaches/nina-gromova@2x.jpg 2x" width="260" height="294" alt="Портрет тренера Нины Громовой." loading=lazy>
                       </picture>
                     </div>
                   </li>
@@ -435,7 +439,7 @@
                   <li class="reviews__item swiper-slide">
                     <picture>
                       <source type="image/webp" srcset="img/reviews/evgeni-chub.webp 1x, img/reviews/evgeni-chub@2x.webp 2x">
-                      <img src="img/reviews/evgeni-chub.jpg" srcset="img/reviews/evgeni-chub@2x.jpg 2x" width="80" height="80" alt="Аватар посетителя Евгения Чуб.">
+                      <img src="img/reviews/evgeni-chub.jpg" srcset="img/reviews/evgeni-chub@2x.jpg 2x" width="80" height="80" alt="Аватар посетителя Евгения Чуб." loading=lazy>
                     </picture>
                     <h3>Евгений Чуб</h3>
                     <p>&laquo;Один из&nbsp;любимых фитнесс клубов в&nbsp;городе. Очень чистое помещение. В&nbsp;залах всегда чисто, свежо, тренажёры новые. Инструктора вежливые, профессиональные&raquo;</p>
