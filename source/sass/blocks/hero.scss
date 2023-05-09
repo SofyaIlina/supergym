@@ -34,7 +34,7 @@
   flex-direction: column;
   text-align: end;
   grid-column: 2/3;
-  padding-top: 112px;
+  padding-top: 110px;
   padding-bottom: 30px;
 
   @include vp-1199 {
@@ -50,21 +50,20 @@
     font-size: 92px;
     font-weight: 600;
     line-height: 111px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
     -webkit-text-stroke: 4px;
     text-transform: uppercase;
 
     @include vp-1199 {
       font-size: 70px;
       line-height: 86px;
-      letter-spacing: 0.06em;
       text-transform: none;
     }
   }
 
   h3 {
     margin: 0;
-    margin-bottom: 13px;
+    margin-bottom: 15px;
     order: -1;
     font-size: 48px;
     font-weight: 600;

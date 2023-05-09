@@ -2266,7 +2266,7 @@ button,
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  padding-top: 112px;
+  padding-top: 110px;
   padding-bottom: 30px;
 }
 
@@ -2275,14 +2275,14 @@ button,
   font-size: 92px;
   font-weight: 600;
   line-height: 111px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   -webkit-text-stroke: 4px;
   text-transform: uppercase;
 }
 
 .hero__title h3 {
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
   -webkit-box-ordinal-group: 0;
   -ms-flex-order: -1;
   order: -1;
@@ -2554,7 +2554,7 @@ button,
 
 .tabs__element li {
   background-color: #ffffff;
-  padding: 56px 0 59px;
+  padding: 57px 0 60px;
   text-align: center;
   border: 7px solid transparent;
   display: -webkit-box;
@@ -2641,7 +2641,6 @@ button,
   -o-border-image: -o-linear-gradient(285deg, #d10a42, #00359f);
   border-image: linear-gradient(165deg, #d10a42, #00359f);
   border-image-slice: 1;
-  padding-bottom: 55px;
 }
 
 .tabs__element li:hover a {
@@ -2761,8 +2760,7 @@ button,
 }
 
 .promo__description dl {
-  margin: 0;
-  margin-top: -2px;
+  margin: -2px 1px 0 0;
 }
 
 .promo__description dl dt {
@@ -3133,7 +3131,7 @@ button,
 }
 
 .stocks__container {
-  padding-top: 102px;
+  padding-top: 101px;
   padding-bottom: 58px;
 }
 
@@ -3797,7 +3795,6 @@ button,
   .hero__title h2 {
     font-size: 70px;
     line-height: 86px;
-    letter-spacing: 0.06em;
     text-transform: none;
   }
 
@@ -3990,7 +3987,7 @@ button,
   }
 
   .coaches__container {
-    padding-top: 50px;
+    padding-top: 51px;
     padding-bottom: 100px;
   }
 
@@ -4041,7 +4038,7 @@ button,
   .features__container {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding-top: 91px;
+    padding-top: 92px;
     padding-bottom: 91px;
     max-width: none;
   }
@@ -4114,7 +4111,7 @@ button,
   }
 
   .stocks__container {
-    padding-top: 93px;
+    padding-top: 92px;
     padding-bottom: 50px;
   }
 
@@ -4207,8 +4204,8 @@ button,
 
   .contacts__content h2 {
     font-size: 42px;
-    line-height: 50px;
-    margin-bottom: 35px;
+    line-height: 58px;
+    margin-bottom: 30px;
   }
 
   .contacts__list {
@@ -4408,7 +4405,7 @@ button,
 
   .tabs__element ul {
     padding: 0;
-    gap: 32px;
+    gap: 35px;
   }
 
   .tabs__element li {
@@ -4450,8 +4447,9 @@ button,
     padding: 25px;
   }
 
-  .tabs__element li:hover {
-    padding-bottom: 49px;
+  .tabs__element li:hover a {
+    padding-top: 27px;
+    padding-bottom: 26px;
   }
 
   .promo__container {
@@ -4717,7 +4715,7 @@ button,
 
   .contacts__content h2 {
     font-size: 32px;
-    line-height: 24px;
+    line-height: 25px;
     margin-bottom: 43px;
   }
 
