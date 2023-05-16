@@ -7,8 +7,12 @@ const initSwiper = () => {
       nextEl: '.coaches__btn--next',
       prevEl: '.coaches__btn--prev',
     },
-    maxBackfaceHiddenSlides: 0,
     spaceBetween: 40,
+    maxBackfaceHiddenSlides: 0,
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
     breakpoints: {
       320: {
         slidesPerView: 1,
@@ -16,9 +20,11 @@ const initSwiper = () => {
       768: {
         slidesPerView: 2,
         spaceBetween: 30,
+        initialSlide: 6,
       },
       1200: {
         slidesPerView: 4,
+        initialSlide: 4,
       },
     },
   });

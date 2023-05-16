@@ -2392,8 +2392,8 @@ button,
 
 .about picture {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1/3;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -2407,10 +2407,15 @@ button,
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
   margin-left: -63px;
   margin-right: auto;
-  margin-top: -113px;
+  margin-top: 288px;
   position: relative;
+  -ms-grid-row-align: start;
+  align-self: start;
 }
 
 .about__video iframe {
@@ -2729,8 +2734,8 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-line-pack: center;
-  align-content: center;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
   width: 500px;
 }
 
@@ -2927,7 +2932,7 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   background-color: rgba(16, 38, 84, 0.89);
-  aspect-ratio: 1/1.1;
+  aspect-ratio: 1/1.13;
 }
 
 .coaches__description-wrapper h3 {
@@ -2956,6 +2961,8 @@ button,
 .coaches__description-wrapper .coaches__description-list {
   list-style-type: disc;
   padding-left: 28px;
+  max-height: 100px;
+  overflow-y: scroll;
 }
 
 .coaches__description-wrapper .coaches__description-list li {
@@ -3113,23 +3120,6 @@ button,
   margin: 0;
 }
 
-.features__item-main::after,
-.features__item-main::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -20px;
-  width: 340px;
-  height: 2px;
-  background-color: #d10a42;
-  opacity: 0.2;
-}
-
-.features__item-main::after {
-  left: auto;
-  right: 0;
-}
-
 .stocks__container {
   padding-top: 101px;
   padding-bottom: 58px;
@@ -3209,6 +3199,8 @@ button,
   text-decoration: underline;
   text-underline-offset: 3px;
   margin-top: auto;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
 .stocks__main .stocks__main-text a.focus-visible:focus {
@@ -3240,6 +3232,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  min-height: 211px;
 }
 
 .stocks__secondary li br {
@@ -3268,6 +3261,8 @@ button,
   text-decoration: underline;
   text-underline-offset: 3px;
   margin-top: auto;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
 .stocks__secondary li a.focus-visible:focus {
@@ -3725,14 +3720,38 @@ button,
     }
 }
 
-  .coaches__item:hover .coaches__image {
+  .coaches__item:hover .coaches__image,
+  .coaches__item:focus .coaches__image {
     z-index: -10;
     -webkit-box-shadow: 0 0 35px rgba(42, 59, 99, 0.17);
     box-shadow: 0 0 35px rgba(42, 59, 99, 0.17);
   }
 
-  .coaches__item:hover h3 {
+  .coaches__item:hover h3,
+  .coaches__item:focus h3 {
     top: 51px;
+  }
+
+  .features__item:nth-last-child(2),
+  .features__item:last-child {
+    position: relative;
+  }
+
+  .features__item:nth-last-child(2)::before,
+  .features__item:last-child::before {
+    content: "";
+    position: absolute;
+    top: -84px;
+    right: 0;
+    width: 340px;
+    height: 2px;
+    background-color: #d10a42;
+    opacity: 0.2;
+  }
+
+  .features__item:nth-child(2),
+  .features__item:first-child {
+    margin-bottom: 100px;
   }
 }
 
@@ -3862,13 +3881,13 @@ button,
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
-    width: 266px;
-    height: 167px;
+    width: 39.24%;
   }
 
   .about__video iframe {
-    width: 266px;
-    height: 167px;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/0.63;
   }
 
   .memberships::before {
@@ -4021,6 +4040,7 @@ button,
 
   .coaches__description-wrapper {
     padding-top: 74px;
+    aspect-ratio: 1/1.1;
   }
 
   .coaches__description-wrapper h3 {
@@ -4093,11 +4113,6 @@ button,
     -ms-grid-column-align: center;
     justify-self: center;
     margin-bottom: 15px;
-  }
-
-  .features__item-main::after,
-  .features__item-main::before {
-    display: none;
   }
 
   .features__item-main b {
@@ -4508,7 +4523,7 @@ button,
   .coaches__description-wrapper {
     padding: 66px 32px 29px;
     padding-left: 40px;
-    aspect-ratio: 1/1.2;
+    aspect-ratio: 1/1.22;
   }
 
   .coaches__description-wrapper p {
@@ -4621,11 +4636,23 @@ button,
     margin-bottom: 27px;
   }
 
+  .stocks__main .stocks__main-text a {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+
   .stocks__secondary li {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 40px;
     min-height: 211px;
+  }
+
+  .stocks__secondary li a {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
   }
 
   .reviews__container {
